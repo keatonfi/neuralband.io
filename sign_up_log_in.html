@@ -2,57 +2,49 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width. initial-scale=1">
         <title> Signup / Login Form </title>
     </head>
     <body>
-        <form>
+        <form action="#">
             <fieldset>
-                <legend>Sign Up</legend>
-                <label for="fname">First Name: </label><br>
-                <input type="text" id="fname" name="fname"><br>
+                <header>Sign Up</header>
+                <input type="text" id="name" name="name" placeholder="First Name" required><br><br>
 
-                <label for="lname">Last Name: </label><br>
-                <input type="text" id="lname" name="lname"> <br>
+                <input type="text" id="lname" name="lname" placeholder="Last Name" required> <br>
+                <br>
+                <input type="email" id ="email" name = "email" placeholder="Email" required><br><br>
 
-                <label for="pwd">Password: </label><br>
-                <input type="password" id="pwd" name="pwd"><br>
-
-                <label for ="email">Email:</label><br>
-                <input type="email" id ="email" name = "email"><br>
-
-                <label for="phonenum">Phone Number: </label><br>
-                <input type="tel" id="phonenum" name="phonenum" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+                <input type="password" id="pwd" name="pwd" placeholder="Create Password" required><br><br>
                 
+                <input type="tel" id="phonenum" name="phonenum" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000" required><br>
+                <br>
                 <label for="role">Role: </label><br>
-                <select id="role" name="role">
+                <select id="role" name="role" required>
                     <option value="coach">Coach</option>
                     <option value="medperson">Medical Personnel</option>
                 </select><br>
+                <br>
                 
-                <label for="address">Address: </label><br>
-                <input type="text" id="address" name="address"><br><br>
                 <a href="index.html"> <!--page that coems after logging in goes here-->
-                    <input type="button" value ="Sign Up"> <br>
+                    <input type="button" value="Signup"></input><br>
                 </a>
-                <!-- <input type="button">Go Back<br> -->
+                
+                <p>Already have an account? <a href="#">Login</a></p>
+
             </fieldset>
 
             <fieldset>
                 <legend>Log In</legend>
-                <label for="fname">First Name: </label><br>
-                <input type="text" id="fname" name="fname"><br>
+                <input type="email" id ="email" name = "email" placeholder="Email"><br><br>
 
-                <label for="lname">Last Name: </label><br>
-                <input type="text" id="lname" name="lname"> <br>
-
-                <label for="pwd">Password: </label><br>
-                <input type="password" id="pwd" name="pwd"><br>
-
-                <label for ="email">Email:</label><br>
-                <input type="email" id ="email" name = "email"><br><br>
+                <input type="password" id="pwd" name="pwd" placeholder="Password"><br><br>
+                
                 <a href="index.html"> <!--page that coems after logging in goes here-->
                     <input type="button" value ="Log In"> <br>
                 </a>
+
+                <p>Don't have an account? <a href="#">Signup</a></p>
             </fieldset>
         </form>
 
