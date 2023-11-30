@@ -1,6 +1,5 @@
 <html>
 <body>
-    Welcome <?php echo $_["fname"] $_["lname"]; ?><br>
-; ?>
+    Welcome <?php echo $_POST["fname"]; ?><br>
 </body>
 </html>
