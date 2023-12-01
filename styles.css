@@ -16,39 +16,22 @@ header{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-p, label{
+p, label,.field input[type=checkbox]{
     color: #000000;
     text-align: center;
     font-size: 16px;
 }
 
-button{
-    background-color: #084276;
-    color: #eeeeee;
-    font-size: 16px;
-    padding: 14px 20px;
-    margin: 0 20px;
-    border: none;
-    cursor: pointer;
-    width: 50%;
-    align-items: center;
-    border-radius: 60px;
-}
-button:hover{
-    opacity:0.8;
-}
-
-
-
 .container{
     display:flex;
     align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 .container > div{
     background-color: #b9b9b9;
-    align-content: center;
-    margin: auto;
-    min-width: 100px;
+    margin: 0 50px;
+    flex: 0 0 auto;
     padding: 30px;
     border-radius: 6px;
     font-size: 30px;
@@ -58,26 +41,29 @@ form{
     margin-top: 30px;
     color: #eeeeee;
 }
-/* .form.field{
+.field input, select{
     position: relative;
-    height: 50px;
-    width: 100%;
-    margin-top: 20px;
-    border-radius: 6px;
-} */
-.field input[type=text], .field input[type=password], .field input[type=tel], .field input[type=email], .field select{
     height: 100%;
     width: 100%;
     margin-bottom: 10px;
     border: none;
     font-size: 16px;
     font-weight: 400;
-    padding: 10px;
+    padding: 15px;
     border-radius: 6px;
 }
 
-.field input{
-    outline:none;
-    padding: 0 20px;
-    border: 1px solid #8f8c9a;
+button{
+    background-color: #084276;
+    color: #eeeeee;
+    font-size: 16px;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 60px;
+    text-align: center;
+}
+button:hover{
+    opacity:0.8;
 }

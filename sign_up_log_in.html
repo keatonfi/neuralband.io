@@ -10,46 +10,42 @@
     <body>
         <div class="container">
             <div class="form-content">
+                <header>Login</header>
+                <form action="main_screen.html" method="post">
+                    <div class="field input">
+                        <input type="email" name="email" placeholder="Enter Email" required><br>
+                        <input type="password" name="pwd" placeholder="Enter Password" required><br>
+                    </div>
+                
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember">
+                        Remember me
+                    </label>
+
+                    <button type="submit">Login</button><br>
+                    <p>New User? <a href="#">Signup</a></p>
+                </form>
+            </div>
+            <div class="form-content">
                 <header>Signup</header>
                 <form action="main_screen.html" method="post">
-                    <div class="field input-field">
+                    <div class="field input">
                         <input type="text" name="name" placeholder="Enter Name" required><br>
-                        <input type="email" name = "email" placeholder="Enter Email" required><br>
+                        <input type="email" name="email" placeholder="Enter Email" required><br>
                         <input type="password" name="pwd" placeholder="Create Password" required><br>
                         <input type="tel" name="phonenum" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000" required><br>
                         
                         <label for="role">Role: </label><br>
                         <select id="role" name="role" required>
                             <option value="coach">Coach</option>
-                            <option value="medperson">Medical Personnel</option>
+                            <option value="manager">Manager</option>
+                            <option value="medperson">Health Professional</option>
                         </select><br>
                     </div>    
-                    <button type="submit">Signup</button><br>
-                    <label>
-                        <input type="checkbox" checked="checked" name="remember">
-                        Remember me
-                    </label>
-                          
+                    <button type="submit">Signup</button><br> 
                     <p>Already have an account? <a href="#">Login</a></p>
                 </form>
             </div> 
-            <div class="form-content">
-                <header>Login</header>
-                <form action="main_screen.html">
-                    <!-- <fieldset> -->
-                        <div class="field input-field">
-                            <input type="email" id ="email" name = "email" placeholder="Email" required><br>
-
-                            <input type="password" id="pwd" name="pwd" placeholder="Password" required><br>
-                        </div>
-                    
-                        <button type="submit">Login</button><br>
-
-                        <p>New User? <a href="#">Signup</a></p>
-
-                    <!-- </fieldset> -->
-                </form>
-            </div>
         </div>
     </body>
 </html>
