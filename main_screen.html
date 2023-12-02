@@ -1,38 +1,56 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Athlete Management</title>
+        <link rel="stylesheet" href="styles_3.css">
+    </head>
     <body>
         <form action="/action_page.php" method="post">
-            <fieldset>
-                <h1 style="text-align:center"> <b>Neural Band</b> </h1>
-            </fieldset>
-
-            <fieldset>
-                <legend>Athlete Management</legend>
-                <label for="atl_name">Athlete Name: </label><br>
-                <input type="text" id="atl_name" name="atl_name"><br>
-                <input type="button" value="Submit"><br>
-
-                <label for="jrsy_num">Jersey Number: </label><br>
-                <input type="number" id="jrsy_num" name="jrsy_num"><br>
-                <input type="button" value="Submit"><br>
-            </fieldset>
-
-            <fieldset>
-                <legend>Team Management</legend>
-                <label for="team_name">Team Name: </label><br>
-                <input type="text" id="team_name" name="team_name"><br>
-                <input type="button" value="Submit"><br>
-            </fieldset>
-
-            <fieldset>
-                <legend>Athlete Statistics:</legend>
-                    <img src="file:///C:/Users/keato/Downloads/Impact%20Force%20vs.%20Hits.png" alt="Athlete Image">
-            </fieldset>
-
-            <fieldset>
-                <legend>Team Statistics:</legend>
-                    <img src="file:///C:/Users/keato/Downloads/Impact%20Force%20vs.%20Hits.png" alt="Team Statistics">
-            </fieldset>
+            <!-- <fieldset> -->
+            <h1> <b>Neural Band</b> </h1>
+            <!-- </fieldset> -->
+                <div class="container">
+                    <fieldset class="container">
+                        <legend>Athlete Management</legend>
+                        <div class="field input">
+                            <label for="atl_name">Athlete Name: </label><br>
+                            <input type="text" id="atl_name" name="atl_name"><br>
+                            <input type="button" value="Submit"><br>
+            
+                            <label for="jrsy_num">Jersey Number: </label><br>
+                            <input type="number" id="jrsy_num" name="jrsy_num"><br>
+                            <input type="button" value="Submit"><br>
+                        </div>
+                        
+                    </fieldset>
+                </div>
+                <div class="container">
+                    <fieldset class="container">
+                        <legend>Team Management</legend>
+                        <div class="field input">
+                            <label for="team_name">Team Name: </label><br>
+                            <input type="text" id="team_name" name="team_name"><br>
+                            <input type="button" value="Submit"><br>
+                        </div>  
+                    </fieldset>
+                </div>
+                    
+                <div class="container">
+                    <fieldset>
+                        <legend>Athlete Statistics:</legend>
+                            <img src="file:///C:/Users/keato/Downloads/Impact%20Force%20vs.%20Hits.png" alt="Athlete Image">
+                    </fieldset>
+                </div>
+                    
+                <div class="container">
+                    <fieldset>
+                        <legend>Team Statistics:</legend>
+                            <img src="file:///C:/Users/keato/Downloads/Impact%20Force%20vs.%20Hits.png" alt="Team Statistics">
+                    </fieldset>
+                </div>         
+            </div> 
         </form>
     </body>
 </html>
