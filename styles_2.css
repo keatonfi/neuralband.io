@@ -15,10 +15,8 @@ body{
     justify-content: center;
 }
 .container > div{
-    /* margin: 0 50px; */
     flex: 0 0 auto;
     padding: 30px;
-    /* font-size: 30px; */
 }
 .container > p{
     background-color: #b9b9b9;
@@ -38,19 +36,16 @@ body{
     font-size: 18px;
     margin: auto;
     flex: 0 auto;
-    /* text-align: center; */
     opacity: 0.7;
 }
 
 h1{
     font-family: 'Nova Mono', monospace;
     color: aliceblue;
-    /* border-style: solid;
-    background-color: #b9b9b9; */
 }
 a{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: smaller;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 13px;
     text-align: right;
     color: aliceblue;
 }
@@ -59,5 +54,3 @@ h2{
     background-color: #ffffff;
     text-align: center;
 }
-
-
