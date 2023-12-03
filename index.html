@@ -1,16 +1,96 @@
 <!DOCTYPE html>
 <html>
+    <form action="/action_page.php" method="post">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Neural Band</title>
+        <title>Team Neurotics:Neural Band</title>
     </head>
     <body>
-        <h1>Neural Band</h1>
+        <h1 style="border-style:solid ;"><b>Neural Band</b></h1>
+        <br>
+        <br>
+        <h2 style="text-align-last: center;"><b>Project Statment</b></h2>
         
+       <font size="4"> <p style="text-align:center ;">We, team Neurotics, are focused on creating a safer environment for sports and players around the world.<br> The product we have developed is what we like to call the Sensor Band.
+        The Sensor Band is used to track<br> brain activity during sports and for coaches/trainers to recognize forces done to the band, this will be able <br>to prevent athletes from further injury.
+          This product should be easily worn by the athlete without it directly<br> affecting their game, while maintaining good health within all kinds of athletes.
+The Sensor Band product<br> is intended to lower the amount of concussion 
+a player gets in their career. We envision this to primarily<br> help athletes 
+at the higher level for example college and professional players.
+We want a product whose<br> emphasis is on slowing down the amount of concussions, 
+so a player does not get CTE which leads to<br> many other mental health illnesses such as depression, 
+anxiety, and mood swings.</p></font>
+<legend><h2><b> Feature Requirements</b></h2></legend>
+<fieldset>
+    <ol>
+    <li>Registration-User shall register by providing their personal information (for example, name and role[coach/trainer/medical personnel]) 
+    <br>System will create a new profile for the user upon 
+            registration. The role may determine what level of access the user has to information on the system
+    </li>
+    <br>
+    <li> Managment-User shall be able to change personal information after registration (for example, role) 
+            <br>System will update user access to information on the system.
+    </li>
+    <br>
+        <li> Managment-Change Users-Users shall be able to log in and out of accounts.</li>
+        <br>
+        <li>Add Athlete-Users shall provide personal information on the athlete they wish to add (for example: full name, jersey number, age, weight) 
+            System will store each athlete’s profile.
+            </li>
+        <br>
+        <li>Remove Athlete-Users shall provide the full name of the athlete they wish to remove 
+            System will update necessary statistics (i.e. remove statistics regarding player)
+            </li>
+            <br>
+        <li>Athlete Statistics-Users can request a list of statistics for a specific athlete. Statistics may include: 
+            <ul>
+            <li> Date and time of last impact </li>
+            <li> Force of last impact</li>
+            <li> Total impacts</li>
+            <li> Impact history</li>
+            <li> Risk of concussion</li>
+            </ul>
+            </li> 
+            <br>
+        <li>Total Statistics-Users can request a list of statistics for each athlete. 
+            Statistics can be viewed as a graph, chart, and/or table and may included: 
+            <ul>
+              <li>Total recorded hits in a match</li> 
+              <li>Player that received the most hits</li>
+              <li>Player that received the least hits</li> 
+               <li>Player that received the heaviest hit</li>
+            </ul>
+            </li>
+        <li>Alert Notifications_System shall send notifications of the force of each impact accompanied by the player name/jersey number who received that impact to the user (based on readings from sensors in the headband, which are then sent to the system device thingy) 
+            Notifications can also include risk levels of concussion based on the impact: 
+            <ul>
+             <li>Severe risk </li>
+             <li>Medium risk</li>
+             <li>Low risk </li>
+            </ul>
+            User can customize alert notifications: 
+            <ul>
+            <li>Alert only when an impact exceeds impact threshold - Alert all impacts </li>
+             <li>Vibrate only / sound only </li>
+             <li>Sound, vibration, and a visual notification (for example, a red exclamation mark)</li>
+            </ul>
+            </li>
+            <br>
+        <li>System Settings-User can set: 
+            <ul>
+            <li>threshold </li>
+            <li>Alert sound</li>
+            <li> Statistics settings (customize graph axes, graph types (like frequency graphs), etc) </li>
+            <li> Manage profiles</li>
+            </ul>
+            </li>
+    </ol>
+</fieldset>
+
     </body>
 
-
+</form>
 
 
 </html>
