@@ -9,40 +9,15 @@ body{
     background-color: #200a64;
 }
 
-.container{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-.container > div{
-    flex: 0 0 auto;
-    padding: 30px;
-}
-.container > p{
-    background-color: #b9b9b9;
-    border-radius: 15px;
-    padding: 30px;
-    font-size: 18px;
-    margin: 0 25%;
-    flex: 0 auto;
-    text-align: center;
-    opacity: 0.7;
-}
-.container > fieldset{
-    background-color: #b9b9b9;
-    border-radius: 15px;
-    line-height: normal;
-    padding: 15px;
-    font-size: 18px;
-    margin: auto;
-    flex: 0 auto;
-    opacity: 0.7;
-}
-
 h1{
     font-family: 'Nova Mono', monospace;
     color: aliceblue;
 }
+h2{
+    background-color: #ffffff;
+    text-align: center;
+}
+
 a{
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 13px;
@@ -50,7 +25,45 @@ a{
     color: aliceblue;
 }
 
-h2{
-    background-color: #ffffff;
-    text-align: center;
+legend, label{
+    color: black;
+    background-color: #b9b9b9;
+    border-radius: 6px;
 }
+
+.container{
+    display:flex;
+    border-radius: 15px;
+    font-size: 16px;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+.container > div{
+    flex: 0 0 auto;
+}
+.container > p{
+    background-color: #b9b9b9;
+    padding: 30px;
+    margin: 0 25%;
+    flex: 0 auto;
+    text-align: center;
+    opacity: 0.7;
+}
+.container > fieldset{
+    background-color: #b9b9b9;
+    line-height: normal;
+    margin: content;
+    flex: 0 auto;
+    opacity: 0.7;  
+}
+
+form{
+    color: #eeeeee;
+}
+.field input[type=text], .field input[type=number], select{
+    border: none;
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 6px;
+}
+
