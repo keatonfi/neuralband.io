@@ -1,0 +1,86 @@
+<h2>Statistic Preferences</h2>
+<style>
+    .button {
+      background-color: #04AA6D; /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    
+    .button2 {background-color: #008CBA;} /* Blue */
+    .button3 {background-color: #f44336;} /* Red */ 
+    .button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+    .button5 {background-color: #555555;} /* Black */
+
+#id_work_days{
+  height: 30px;
+  border: none;
+  overflow: hidden;
+}
+#id_work_days::-moz-focus-inner {
+  border: 0;
+}
+#id_work_days:focus {
+  outline: none;
+}
+#id_work_days option{
+  width: 100px;
+  font-size: 1.2em;
+  /* padding: 10px 0; */
+  text-align: center;
+  margin-right: 10px;
+  display: inline-block;
+  cursor: pointer;
+  border:rgb(0, 0, 0) solid 1px;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+}
+</style>
+
+ 
+
+<button class="button button4">Customize Graph Axis</button>
+<input type="text" size="10" value="x:">
+<input type="text" size="10" value="y:"><br>
+
+<button class="button button4">Change Title</button>
+<input type="text" size="10" value="_________"><br>
+
+
+<button class="button button4">Customize Graph Type</button>
+<select name="work_days" id="id_work_days" multiple>
+    <option value="1">Line Graph</option>
+    <option value="2">Histogram</option>
+    <option value="3">Pie Chart</option>
+    <option value="4">Scatter Plot</option>
+    <option value="5">Area Chart</option>
+
+</select>
+<br>
+
+<button class="button button4">Customize Line Type</button>
+<select name="work_days" id="id_work_days" multiple>
+    <option value="6">Bold</option>
+    <option value="7">Dotted</option>
+    <option value="8">Compare Line</option>
+</select>
+<br>
+
+<button class="button button4">Color Settings</button>
+
+    <select name="work_days" id="id_work_days" multiple>
+        <option value="9">Dark</option>
+        <option value="10">Light</option>
+    </select>
+    <br>
+
+
+<a href="project2.html">
+    <button class="button button3">Go Back</button>
+</a>
